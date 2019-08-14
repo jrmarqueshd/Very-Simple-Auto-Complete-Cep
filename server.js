@@ -1,8 +1,8 @@
-const express = require("express");
-const app = express();
+let express = require("express");
+let app = express();
 
-app.get('/', (res, req)=>{
-    res.send("Hello World!");
+app.get('/', (req, res)=>{
+    res.send("App Running on port 3000");
 })
 
 app.listen(3000);
