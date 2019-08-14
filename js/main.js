@@ -9,17 +9,17 @@ window.addEventListener('load', ()=>{
         if($inputCEP.value.length == 8){
             let url = `http://viacep.com.br/ws/${$inputCEP.value}/json/`;
             fetch(url)
-            .then(res => res.json())
-            .then((out) =>{
+            .then(res => {
+                return res.json();
+            })
+            .then( async (out) =>{
+
                 let end = {
                     cep: out.cep,
                     address: out.logradouro,
                     neighborhood: out.bairro,
                     city: out.localidade,
                     state: out.uf
-                }
-                if(end.address == 'undefined' || end.neighborhood == "undefined" || end.city == "undefined" || end.state == "undefined"){
-                    alert("ueba");
                 }
 
                 $address.value = end.address;
