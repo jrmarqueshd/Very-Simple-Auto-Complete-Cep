@@ -35,7 +35,7 @@ window.addEventListener('load', ()=>{
 
 
 
-    let cep = "07473190";
+    let cep = "09973220";
 
     if(cep.length != 8){
         alert("Digite um valor válido!");
@@ -53,9 +53,10 @@ window.addEventListener('load', ()=>{
                 }else{
                     return alert("Error!!!");
                 }
-            }).catch(err){
+            })
+            .catch((err)=>{
                 alert(`Houve um erro inexperado (${err}), Entre em contato com a equipe técnica!`);
-            }
+            })
     }
 
     // fetch("https://api.postmon.com.br/v1/cep/" + cep)

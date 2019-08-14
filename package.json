@@ -1,0 +1,16 @@
+{
+  "name": "autocompleteCEP",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "Hello World!",
+    "start": "nodemon -e js"
+  },
+  "repository": "https://github.com/jrmarqueshd/very-simple-autocomplete-cep.git",
+  "author": "jrmarqueshd <gilmar_junior@hotmail.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.1",
+    "nodemon": "1.19.1"
+  }
+}
